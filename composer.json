@@ -1,0 +1,19 @@
+{
+  "name": "creative/auth-client-bundle",
+  "description": "Client for Oath2-server",
+  "type": "symfony-bundle",
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=8.0",
+    "symfony/framework-bundle": "^5.2",
+    "lcobucci/jwt": "^4.1",
+    "symfony/security-bundle": "5.2.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Creative\\AuthClientBundle\\": ""
+    }
+  },
+  "license": "proprietary"
+}

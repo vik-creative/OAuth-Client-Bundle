@@ -1,0 +1,25 @@
+services:
+  auth_client.user_provider:
+    class: Creative\AuthClientBundle\Security\CreativeOauthProvider
+    autowire: true
+    public: true
+    arguments:
+      $authClient: '@auth_client.client'
+
+  auth_client.client:
+    class: Creative\AuthClientBundle\Service\AuthClient
+    autowire: true
+    public: true
+
+  auth_client.jwt_parser:
+    class: Creative\AuthClientBundle\Service\JwtParser
+    autowire: true
+    public: true
+
+  auth_client.authenticator:
+    class: Creative\AuthClientBundle\Security\CreativeOauthAuthenticator
+    autowire: true
+    public: true
+    arguments:
+      $authClient: '@auth_client.client'
+      $jwtParser: '@auth_client.jwt_parser'
