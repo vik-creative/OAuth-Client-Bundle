@@ -7,7 +7,7 @@
     "repositories": [
         {
             "type": "git",
-            "url": "https://git.crtweb.ru/creative-packages/oauth-bundle.git"
+            "url": "https://github.com/vik-creative/OAuth-Client-Bundle.git"
         }
     ]
     ```
